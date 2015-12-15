@@ -1,3 +1,11 @@
-## My Package
+# Archive button
 
-A sample package for N1. It demonstrates how to add components to the composer's action bar and the message sidebar. Enjoy!
+This extension replicate the archive feature of thunderbird.
+
+See https://support.mozilla.org/en-US/kb/archived-messages
+
+For now, it only archive message in Archives/2015 folder ;).
+
+## License
+
+MIT
