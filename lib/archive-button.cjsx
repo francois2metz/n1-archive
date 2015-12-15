@@ -28,7 +28,8 @@ class ArchiveButton extends React.Component
 
   _onArchive: (e) =>
     return unless DOMUtils.nodeIsVisible(e.currentTarget)
-    category = _.findWhere(CategoryStore.getCategories(), displayName: 'Archives.2015')
+    year = @props.thread.lastMessageReceivedTimestamp.getFullYear()
+    category = _.findWhere(CategoryStore.getCategories(), displayName: 'Archives.'+ year)
     task = TaskFactory.taskForApplyingCategory
       threads: [@props.thread],
       fromView: FocusedMailViewStore.mailView(),
