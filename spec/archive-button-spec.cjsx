@@ -6,7 +6,7 @@ ArchiveButton = require '../lib/archive-button'
 describe "ArchiveButton", ->
   beforeEach ->
     @component = ReactTestUtils.renderIntoDocument(
-      <MyComposerButton draftClientId="test" />
+      <ArchiveButton />
     )
 
   it "should render into the page", ->
